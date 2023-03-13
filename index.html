@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>tabs-different-content</title>
+</head>
+<body>
+  <div class="js-tabs" id="tabs">
+    <ul class="js-tabs__header">
+     <li><a class="js-tabs__title" href="#">table 1</a></li>
+     <li><a class="js-tabs__title" href="#">table 2</a></li>
+     <li><a class="js-tabs__title" href="#">table 3</a></li>
+     <li><a class="js-tabs__title" href="#">table 4</a></li>
+    </ul>
+    <div class="js-tabs__content">
+     <h1>one</h1>
+     <p>description one</p>
+    </div>
+    <div class="js-tabs__content">
+      <h1>two</h1>
+      <img src="http://lorempixel.com/600/100" alt="" >
+      <p>description two</p>
+     </div>
+     <div class="js-tabs__content">
+      <h1>three</h1>
+      <img src="http://lorempixel.com/500/300" alt="" >
+      <p>description three</p>
+     </div>
+     <div class="js-tabs__content">
+      <h1>four</h1>
+      
+      <p>description four</p>
+     </div>
+  </div>
+</body>
+<script src="script.js"></script>
+<script>
+  var tabs = new Tabs({
+    elem: 'tabs',
+    open: 3
+  })
+
+  </script>
+</html>
